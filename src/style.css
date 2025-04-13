@@ -1,0 +1,135 @@
+/* 
+  This is a CSS file for a simple web page. 
+  It includes styles for the body, headings, and paragraphs.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* write your CSS here */
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #e6e9fb;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  max-width: 900px;
+  height: 330px;
+  margin:  auto;
+  padding: 40px 65px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 10px 8px 5px #f0f2fd;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+h1{
+  max-width: 900px;
+  height: 50px;
+  font-size: 40px;
+  font-family: 'Merriweather';
+  font-weight: 700;
+  color: #111827;
+}
+
+p{
+  max-width: 95%;
+  margin: 20px;
+  height: 72px;
+  font-weight: 400;
+  font-size: 23px;
+  color: #374151;
+}
+
+
+.terms{
+  max-width: 800px;
+  display: flex;
+  margin: auto;
+  text-align: left;
+}
+
+.primary-btn{
+  width: 155px;
+  height: 60px;
+  border-radius: 8px;
+  margin: auto;
+  background-color: #111827;
+  color: #ffffff;
+  border: solid 1px;
+  font-size: 23px;
+}
+
+.subscription{
+  margin: 5px;
+}
+
+#email{
+  width: 550px;
+  height: 20px;
+  padding: 18px 32px;
+  border-radius: 8px;
+  border: solid 1px #b3b8d8;
+  font-size: 23px;
+  color: #b3b8d8;
+  background-color: #fafaff;
+  opacity: 50%;
+  
+}
+
+.label{
+  position: relative;
+  height: 42px;
+  margin: 5px;
+  font-size: 13px;
+  right: -10px;
+  color: #111827;
+}
+
+.checkbox{
+  opacity: 0%;
+  position: relative;
+  left: 31px;
+  top: -10px;
+}
+
+input[type="checkbox"] {
+  width: 35px;                       
+  height: 45px;                          
+} 
+
+
+.checkmark {
+  height: 20px;
+  width: 35px;
+  margin: 5px;
+  background-color: #ffffff;
+  border: solid 1px #b3b8d8;
+border-radius: 8px;
+transition: .1s;
+}
+
+.checkbox:hover + .checkmark {
+  background-color: #e6e9fb;
+}
+
+.checkbox:checked + .checkmark {
+  background-color: #6366F1;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    margin: 0 10px;
+  }
+  .subscription{
+    display: flex;
+  }
+}
